@@ -9,7 +9,7 @@ console.log(__dirname);
 
 module.exports = {
   // 자바스크립트 빌드
-  entry: {
+  entry: { // 번들링 시작 지점 
     app: ["babel-polyfill", "./src/index.js"]
   },
   output: {
