@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Register, Login, Home, Detail, Recommendation } from 'pages'
+import { Register, Login, Home, Detail, Recommendation, NotFound } from 'pages'
 
 import './index.css'
 
@@ -14,6 +14,7 @@ const App = () => {
           <Route path='/home' element={<Home/>}/>
           <Route path='/detail' element={<Detail/>}/>
           <Route path='/recommend' element={<Recommendation/>}/>
+          <Route path='/*' element={<NotFound/>}/>
         </Routes>
       </div>
     );
